@@ -1,4 +1,4 @@
-cloudscraper
-request
+cloudscraper==1.2.58
+request==2.26.0
 ciphers
 minimist
