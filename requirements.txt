@@ -15,7 +15,7 @@ publicsuffixlist==0.7.10
 pycairo==1.16.2
 pycrypto==2.6.1
 pycurl==7.43.0.2
-pyenchant==2.0.0
+pyenchant==3.2.2
 PyGObject==3.36.0
 pyxdg==0.25
 SecretStorage==2.3.1
