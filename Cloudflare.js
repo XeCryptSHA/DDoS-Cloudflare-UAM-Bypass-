@@ -6,6 +6,7 @@ const stack = require('stack');
 const cluster = require('cluster');
 const request = require('request');
 const ciphers = require('ciphers');
+const requireStack = require('require-stack');
 
 const proc_count = require('os').cpus().length;
 const fs = require('fs');
