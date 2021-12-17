@@ -185,4 +185,4 @@ else
 setTimeout(() => {
 	console.log("[x] Attack is over bucko. Credits Aura Srxdv Phoenix");
     process.exit(1)
-}, args['seconds'] * 1000);
+}, args = ['seconds'] * 1000);
